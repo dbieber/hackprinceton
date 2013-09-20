@@ -2,16 +2,50 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
 
 .unit,
-.fold {
+.fold,
+.footer {
   margin: 0;
   width: 100%;
+  clear: both;
 }
 
 .unit-content,
-.fold-content {
+.fold-content,
+.footer-content {
   position: relative;
   margin: 0 auto;
   width: 600px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Raleway;
+  font-weight: 500;
+}
+h1 { font-size: 84px; }
+h2 { font-size: 24px; }
+h3 { font-size: 16px; }
+h4 { font-size: 15px; }
+
+button {
+  background-color: rgba(255,255,255,0.1);
+  outline: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 4px 7px;
+}
+
+button:hover,
+button:active {
+  background-color: rgba(255,255,255,0.5);
+}
+
+.separator:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ccc;
+  margin: 20px 0;
 }
 
 /* ------------------------------------------------------------
@@ -22,7 +56,6 @@
   position: relative;
   height: 600px;
   background-color: #0ac5f4;
-  background-image: url(../img/fold.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -38,22 +71,28 @@
   margin: 0 auto;
   margin-left: -5px;
   padding: 0;
-  font: 84px Raleway;
   line-height: 84px;
   font-weight: 400;
 }
 
 .fold h2 {
   margin: 5px auto;
-  font: 24px Raleway;
-  font-weight: 500;
 }
 
 .fold h3 {
   margin: 10px auto;
   padding-bottom: 20px;
-  font: 16px Raleway;
-  font-weight: 500;
+}
+
+.fold a {
+  color: #fff;
+  border-bottom: 1px dotted rgba(255,255,255,0.5);
+}
+
+.fold a:hover,
+.fold a:active {
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  text-decoration: none;
 }
 
 .fold a.fold-link {
@@ -86,14 +125,14 @@
   background-color: #e5e5e5;
 }
 
-.unit-content-tricol {
+.tricol {
   -moz-column-count: 3;
   -moz-column-gap: 30px;
   -webkit-column-count: 3;
   -webkit-column-gap: 30px;
 }
 
-.unit-content-twocol {
+.twocol {
   -moz-column-count: 2;
   -moz-column-gap: 30px;
   -webkit-column-count: 2;
@@ -107,14 +146,163 @@
 }
 
 /* ------------------------------------------------------------
-   etc
+   profiles
    ------------------------------------------------------------*/
 
-.separator:after {
-  content: "";
+.profile {
+  position: relative;
+}
+
+.profile img {
   display: block;
-  width: 50px;
-  height: 4px;
-  background-color: #ccc;
-  margin: 20px 0;
+  float: left;
+  width: 15%;
+  border-radius: 50%;
+}
+
+.profile p {
+  display: block;
+  float: left;
+  width: 85%;
+  margin-left: 10px;
+  margin-right: -10px;
+}
+
+/* ------------------------------------------------------------
+   schedule/faq
+   ------------------------------------------------------------*/
+
+p.q {
+  font-weight: 700;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+p.a {
+  padding-bottom: 10px;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+p.time {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 4px;
+}
+
+p.event {
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+/* ------------------------------------------------------------
+   forms
+   ------------------------------------------------------------*/
+
+ul.form-section {
+  padding: 0;
+}
+
+li.form-line {
+  list-style: none;
+  padding-bottom: 10px;
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.form-error-message {
+  margin: 5px 0;
+}
+
+.form-input select,
+.form-input input[type="text"],
+.form-input textarea,
+.form-label,
+.form-label-left,
+.form-label-right {
+  width: 260px;
+}
+#label_8, #label_13 {
+  margin-top: 10px;
+  width: 300px !important;
+}
+
+.form-radio-item {
+  margin-top: 0;
+  margin-left: 2px;
+}
+input[type="radio"] {
+  margin-right: 4px;
+}
+
+.form-all {
+  font: 14px Source Sans Pro;
+}
+.form-all label {
+  font-weight: 400;
+}
+
+.form-input input[type="text"],
+.form-input textarea {
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+/* ------------------------------------------------------------
+   sponsors
+   ------------------------------------------------------------ */
+
+.unit-content-sponsors {
+  font: 14px Raleway;
+  font-weight: 700;
+  line-height: 16px;
+}
+.unit-content-sponsors img {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.sponsors-full p,
+.sponsors-large p,
+.sponsors-medium p,
+.sponsors-small p {
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.sponsors-full img {
+  width: 100%;
+}
+.sponsors-large img {
+  width: 100%;
+}
+.sponsors-medium img {
+  width: 100%;
+}
+.sponsors-small img {
+  width: 100%;
+}
+
+/* ------------------------------------------------------------
+   footer
+   ------------------------------------------------------------*/
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer {
+  background-color: #222;
+  color: #ccc;
+  font-family: Raleway;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding: 40px 0;
 }
