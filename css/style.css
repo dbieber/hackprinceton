@@ -1,0 +1,120 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic);
+
+.unit,
+.fold {
+  margin: 0;
+  width: 100%;
+}
+
+.unit-content,
+.fold-content {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+}
+
+/* ------------------------------------------------------------
+   fold
+   ------------------------------------------------------------*/
+
+.fold {
+  position: relative;
+  height: 600px;
+  background-color: #0ac5f4;
+  background-image: url(../img/fold.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.fold-wrapper {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  color: white;
+}
+
+.fold h1 {
+  margin: 0 auto;
+  margin-left: -5px;
+  padding: 0;
+  font: 84px Raleway;
+  line-height: 84px;
+  font-weight: 400;
+}
+
+.fold h2 {
+  margin: 5px auto;
+  font: 24px Raleway;
+  font-weight: 500;
+}
+
+.fold h3 {
+  margin: 10px auto;
+  padding-bottom: 20px;
+  font: 16px Raleway;
+  font-weight: 500;
+}
+
+.fold a.fold-link {
+  font: 16px Raleway;
+  color: #fff;
+  margin-right: 8px;
+  padding: 8px 10px;
+  border: 2px solid rgba(255,255,255,0.8);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fold a.fold-link:hover,
+.fold a.fold-link:active {
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   units
+   ------------------------------------------------------------*/
+
+.unit {
+  padding: 30px 0;
+  font: 15px Source Sans Pro;
+  line-height: 22px;
+}
+
+.unit-shaded {
+  background-color: #e5e5e5;
+}
+
+.unit-content-tricol {
+  -moz-column-count: 3;
+  -moz-column-gap: 30px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 30px;
+}
+
+.unit-content-twocol {
+  -moz-column-count: 2;
+  -moz-column-gap: 30px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 30px;
+}
+
+.unit h1 {
+  font: 24px Raleway;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+/* ------------------------------------------------------------
+   etc
+   ------------------------------------------------------------*/
+
+.separator:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
