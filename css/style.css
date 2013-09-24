@@ -259,8 +259,8 @@ input[type="radio"] {
   line-height: 16px;
 }
 .unit-content-sponsors img {
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+  /*border: 1px solid #ccc;*/
+  margin-bottom: 20px;
 }
 
 .sponsors-full p,
