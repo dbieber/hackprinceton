@@ -62,7 +62,6 @@ button:active {
    .fold {
     position: relative;
     height: 600px;
-    background-color: #0ac5f4;
     background-size: cover;
     background-position: center;
   }
