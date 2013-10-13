@@ -122,16 +122,16 @@ button:active {
    color: #ffffff;
    text-decoration: none;
    vertical-align: middle;
-   }
-.fold a.fold-link:hover {
+ }
+ .fold a.fold-link:hover {
    border-top-color: #e89a6d;
    background: #e89a6d;
    color: #ffffff;
-   }
-.fold a.fold-link:active {
+ }
+ .fold a.fold-link:active {
    border-top-color: #f36e21;
    background: #f36e21;
-   }
+ }
 
 /* ------------------------------------------------------------
    units
@@ -292,6 +292,21 @@ button:active {
   .sponsors-small p {
     -moz-column-break-inside: avoid;
     -webkit-column-break-inside: avoid;
+  }
+
+  .sponsors-full img,
+  .sponsors-large img,
+  .sponsors-medium img,
+  .sponsors-small img {
+    -webkit-filter: grayscale(100%);
+  }
+
+  .sponsors-full img:hover,
+  .sponsors-large img:hover,
+  .sponsors-medium img:hover,
+  .sponsors-small img:hover {
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
   }
 
   .sponsors-full img {
