@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+.fold-image {
+  padding: 10px;
+}
+
 .unit-content,
 .footer-content {
   position: relative;
@@ -29,7 +33,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
 }
 h1 { font-size: 84px; }
-h2 { font-size: 24px; }
+h2 { font-size: 28px; }
 h3 { font-size: 16px; }
 h4 { font-size: 15px; }
 
@@ -353,6 +357,7 @@ button:active {
   }
 
   .footer-content {
-    margin: 0 auto;
+    margin: 20px;
     padding: 40px 0;
   }
+
