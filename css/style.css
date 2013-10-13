@@ -103,20 +103,35 @@ button:active {
   }
 
   .fold a.fold-link {
-    font: 60px Raleway;
-    color: #f36f21;
-    margin-right: 8px;
-    padding: 8px 10px;
-    border: 2px solid rgba(255,255,255,0.8);
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  .fold a.fold-link:hover,
-  .fold a.fold-link:active {
-    border: 2px solid #f36f21;
-    text-decoration: none;
-  }
+   font: 36px Raleway;
+   border-top: 1px solid #f29966;
+   background: #994d20;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f36e21), to(#994d20));
+   background: -webkit-linear-gradient(top, #f36e21, #994d20);
+   background: -moz-linear-gradient(top, #f36e21, #994d20);
+   background: -ms-linear-gradient(top, #f36e21, #994d20);
+   background: -o-linear-gradient(top, #f36e21, #994d20);
+   padding: 20px 26px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #ffffff;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.fold a.fold-link:hover {
+   border-top-color: #e89a6d;
+   background: #e89a6d;
+   color: #ffffff;
+   }
+.fold a.fold-link:active {
+   border-top-color: #f36e21;
+   background: #f36e21;
+   }
 
 /* ------------------------------------------------------------
    units
@@ -280,16 +295,29 @@ button:active {
   }
 
   .sponsors-full img {
+    display: block;
     width: 100%;
   }
   .sponsors-large img {
-    width: 100%;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .sponsors-medium img {
-    width: 100%;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   .sponsors-small img {
-    width: 100%;
+    display: block;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 /* ------------------------------------------------------------
