@@ -107,21 +107,11 @@ button:active {
 
   .fold a.fold-link {
    font: 36px Raleway;
-   border-top: 1px solid #f29966;
-   background: #994d20;
-   background: -webkit-gradient(linear, left top, left bottom, from(#f36e21), to(#994d20));
-   background: -webkit-linear-gradient(top, #f36e21, #994d20);
-   background: -moz-linear-gradient(top, #f36e21, #994d20);
-   background: -ms-linear-gradient(top, #f36e21, #994d20);
-   background: -o-linear-gradient(top, #f36e21, #994d20);
+   background: #F36F21;
    padding: 20px 26px;
    -webkit-border-radius: 8px;
    -moz-border-radius: 8px;
    border-radius: 16px;
-   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
-   box-shadow: rgba(0,0,0,1) 0 1px 0;
-   text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: #ffffff;
    text-decoration: none;
    vertical-align: middle;
