@@ -347,7 +347,22 @@ button:active {
   }
 
   .footer-content {
+
     margin: 20px;
     padding: 40px 0;
+    display: inline-block;
   }
+
+  .footer-social {
+    float: right;
+    margin: 10px 20px;
+    padding: 40px 0;
+    display: inline-block;
+  }
+
+  .footer-social:hover
+  {
+
+  }
+
 
