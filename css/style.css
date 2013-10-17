@@ -321,7 +321,16 @@ button:active {
     margin-left: auto;
     margin-right: auto;
   }
+
   .sponsors-small img {
+    display: block;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sponsors-tiny img {
     display: block;
     width: 20%;
     height: auto;
