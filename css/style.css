@@ -14,11 +14,11 @@
   margin: 0 auto;
   width: 800px;
   text-align: center;
-  padding: 10px;
 }
 
 .fold-image {
-  padding: 15px;
+  padding: 10px;
+  opacity: 0.8;
 }
 
 .unit-content,
@@ -283,7 +283,8 @@ button:active {
   .sponsors-full p,
   .sponsors-large p,
   .sponsors-medium p,
-  .sponsors-small p {
+  .sponsors-small p,
+  .sponsors-tiny p {
     -moz-column-break-inside: avoid;
     -webkit-column-break-inside: avoid;
   }
@@ -291,14 +292,16 @@ button:active {
   .sponsors-full img,
   .sponsors-large img,
   .sponsors-medium img,
-  .sponsors-small img {
+  .sponsors-small img,
+  .sponsors-tiny img {
     -webkit-filter: grayscale(100%);
   }
 
   .sponsors-full img:hover,
   .sponsors-large img:hover,
   .sponsors-medium img:hover,
-  .sponsors-small img:hover {
+  .sponsors-small img:hover,
+  .sponsors-tiny img:hover {
     filter: gray; /* IE6-9 */
     -webkit-filter: grayscale(0%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
   }
@@ -309,14 +312,14 @@ button:active {
   }
   .sponsors-large img {
     display: block;
-    width: 80%;
+    width: 85%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
   }
   .sponsors-medium img {
     display: block;
-    width: 60%;
+    width: 75%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -324,7 +327,7 @@ button:active {
 
   .sponsors-small img {
     display: block;
-    width: 40%;
+    width: 60%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -332,7 +335,7 @@ button:active {
 
   .sponsors-tiny img {
     display: block;
-    width: 20%;
+    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
